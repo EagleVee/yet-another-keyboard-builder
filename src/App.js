@@ -97,7 +97,7 @@ function App() {
         </a>
 
         <h1 style={{ textTransform: "none" }}>ai03 Plate Generator</h1>
-        <h5 className="pb-2">V2.0</h5>
+        <h5 className="pb-2">Forked from V2.0 by EagleV</h5>
         <p>An advanced plate generator with filleting, kerf, exact dimensions, and a variety of cutouts.</p>
       </div>
 
