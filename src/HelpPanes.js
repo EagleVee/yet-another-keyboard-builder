@@ -3,7 +3,7 @@ export function DataHelpPane() {
     // _rs: Rotate stabilizers independently of the key (useful for bottom row stabs)
     // _rc: Rotate switch cutouts independently of the key
     // _ss: Shift stabilizers (Mainly for 6U off-center). false = Unshifted (default), true = Shifted
-    // _so: Skip automatic orientation fix 
+    // _so: Skip automatic orientation fix
     //      By default, the plategen will auto-rotate vertically tall switches so that they are treated as wide keys rotated 90deg
     //      Setting _so: true will skip this fix
 
@@ -81,7 +81,7 @@ export function SwitchCutoutPane() {
             <h4>Futaba MA</h4>
             <p>14 x 15 mm</p>
             <p>For Futaba MA mechanical switches.</p>
-            
+
         </div>
     )
 }
@@ -91,29 +91,35 @@ export function OtherCutoutPane() {
     return (
         <div>
             <h2>Stabilizer Cutout Types</h2>
-            <br />
+            <br/>
             <h4>Cherry MX Basic</h4>
             <p>A typical cutout suited for most occasions.</p>
-            <br />
+            <br/>
+            <h4>Cherry MX Large</h4>
+            <p>A cutout when you want to support both directions of the stabilizers.</p>
+            <br/>
             <h4>Cherry MX Tight Fit</h4>
-            <p>A smaller cutout that fits tightly around Cherry MX spec stabilizers.<br />
-                May not fit with oversized third party stabilizers.</p>
-            <br />
+            <p>A smaller cutout that fits tightly around Cherry MX spec stabilizers.<br/>
+                May not fit with oversize third party stabilizers.</p>
+            <br/>
             <h4>Cherry MX Spec</h4>
-            <p>The exact stabilizer cutout specified by Cherry MX datasheets.<br />
+            <p>The exact stabilizer cutout specified by Cherry MX datasheets.<br/>
                 Fillet radius should be either very small or 0 due to its intricate shape and tight fit.</p>
-            <br />
+            <br/>
+            <h4>Cherry MX Spec Reverse</h4>
+            <p>The same as Cherry MX Spec, but reversed to make the wires on top to support thinner plate edges.</p>
+            <br/>
             <h4>Alps AEK</h4>
             <p>Alps-specific stabilizers for AEK stabilizer sizes.</p>
-            <br />
+            <br/>
             <h4>Alps AT101</h4>
             <p>Alps-specific stabilizers for AT101 stabilizer sizes.</p>
-            <br />
+            <br/>
             <h2>Acoustic Cutout Types</h2>
-            <br />
+            <br/>
             <h4>Cherry MX Basic</h4>
             <p>A modest amount of acoustic cuts.</p>
-            <br />
+            <br/>
             <h4>Cherry MX Extreme</h4>
             <p>A larger amount of acoustic cuts.</p>
         </div>
@@ -125,9 +131,9 @@ export function AdvancedPane() {
     return (
         <div>
             <h2>Advanced Tuning</h2>
-            <br />
+            <br/>
             <h4>Unit Size</h4>
-            <p>What 1U equivalates to in millimeters. <br />
+            <p>What 1U equivalates to in millimeters. <br/>
                 Standard is 19.05mm, but certain switches such as Choc may need different spacing.</p>
             <br />
             <h4>Kerf</h4>
