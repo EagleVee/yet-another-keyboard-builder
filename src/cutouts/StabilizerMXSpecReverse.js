@@ -108,11 +108,40 @@ export class StabilizerMXSpecReverse extends CutoutGenerator {
 
         if (generatorOptions.stabilizerFilletRadius.gt(0)) {
             const filletNum = generatorOptions.stabilizerFilletRadius.toNumber()
+
             for (let currCutout of [cutoutLeft, cutoutRight]) {
-                const fillet1 = makerjs.path.fillet(currCutout.paths.line1, currCutout.paths.line2a, filletNum)
-                // ... continue adding fillets as in the original code
+                const fillet1 = makerjs.path.fillet(currCutout.paths.line1, currCutout.paths.line2a, filletNum);
+                const fillet1a = makerjs.path.fillet(currCutout.paths.line2a, currCutout.paths.line2b, filletNum);
+                const fillet1b = makerjs.path.fillet(currCutout.paths.line2c, currCutout.paths.line2d, filletNum);
+                const fillet2 = makerjs.path.fillet(currCutout.paths.line2d, currCutout.paths.line3, filletNum);
+                const fillet3 = makerjs.path.fillet(currCutout.paths.line3, currCutout.paths.line4, filletNum);
+                const fillet4 = makerjs.path.fillet(currCutout.paths.line4, currCutout.paths.line5, filletNum);
+                const fillet5 = makerjs.path.fillet(currCutout.paths.line5, currCutout.paths.line6, filletNum);
+                const fillet6 = makerjs.path.fillet(currCutout.paths.line6, currCutout.paths.line7, filletNum);
+                const fillet7 = makerjs.path.fillet(currCutout.paths.line7, currCutout.paths.line8, filletNum);
+                const fillet8 = makerjs.path.fillet(currCutout.paths.line8, currCutout.paths.line9, filletNum);
+                const fillet9 = makerjs.path.fillet(currCutout.paths.line9, currCutout.paths.line10, filletNum);
+                const fillet10 = makerjs.path.fillet(currCutout.paths.line10, currCutout.paths.line11, filletNum);
+                const fillet11 = makerjs.path.fillet(currCutout.paths.line11, currCutout.paths.line12, filletNum);
+                const fillet12 = makerjs.path.fillet(currCutout.paths.line12, currCutout.paths.line1, filletNum);
+
+                currCutout.paths.fillet1 = fillet1;
+                currCutout.paths.fillet1a = fillet1a;
+                currCutout.paths.fillet1b = fillet1b;
+                currCutout.paths.fillet2 = fillet2;
+                currCutout.paths.fillet3 = fillet3;
+                currCutout.paths.fillet4 = fillet4;
+                currCutout.paths.fillet5 = fillet5;
+                currCutout.paths.fillet6 = fillet6;
+                currCutout.paths.fillet7 = fillet7;
+                currCutout.paths.fillet8 = fillet8;
+                currCutout.paths.fillet9 = fillet9;
+                currCutout.paths.fillet10 = fillet10;
+                currCutout.paths.fillet11 = fillet11;
+                currCutout.paths.fillet12 = fillet12;
             }
         }
+
 
         cutoutLeft = makerjs.model.move(cutoutLeft, [stab_spacing_left.times(-1).toNumber(), 0])
         cutoutRight = makerjs.model.move(cutoutRight, [stab_spacing_right.toNumber(), 0])
