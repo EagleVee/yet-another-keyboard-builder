@@ -12,16 +12,16 @@ import { SwitchIRocks } from './cutouts/SwitchIRocks'
 import { SwitchFutabaMA } from './cutouts/SwitchFutabaMA'
 
 import { StabilizerMXBasic } from './cutouts/StabilizerMXBasic'
+import { StabilizerMXLarge } from './cutouts/StabilizerMXLarge'
 import { StabilizerMXSmall } from './cutouts/StabilizerMXSmall'
 import { StabilizerMXSpec } from './cutouts/StabilizerMXSpec'
+import { StabilizerMXSpecReverse } from './cutouts/StabilizerMXSpecReverse'
 import { StabilizerAlpsAEK } from './cutouts/StabilizerAlpsAEK'
 import { StabilizerAlpsAT101 } from './cutouts/StabilizerAlpsAT101'
 import { NullGenerator } from './cutouts/NullGenerator'
 
 import { AcousticMXBasic } from './cutouts/AcousticMXBasic'
 import { AcousticMXExtreme } from './cutouts/AcousticMXExtreme'
-import { StabilizerMXSpecReverse } from './cutouts/StabilizerMXSpecReverse';
-import { StabilizerMXLarge } from './cutouts/StabilizerMXLarge';
 
 
 export function buildPlate(keysArray, generatorOptions) {
