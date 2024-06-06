@@ -20,8 +20,8 @@ import { NullGenerator } from './cutouts/NullGenerator'
 
 import { AcousticMXBasic } from './cutouts/AcousticMXBasic'
 import { AcousticMXExtreme } from './cutouts/AcousticMXExtreme'
-import {StabilizerMXSpecReverse} from "./cutouts/StabilizerMXSpecReverse";
-import {StabilizerMXLarge} from "./cutouts/StabilizerMXLarge";
+import { StabilizerMXSpecReverse } from './cutouts/StabilizerMXSpecReverse';
+import { StabilizerMXLarge } from './cutouts/StabilizerMXLarge';
 
 
 export function buildPlate(keysArray, generatorOptions) {
