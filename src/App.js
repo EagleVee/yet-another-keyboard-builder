@@ -162,7 +162,6 @@ function App() {
                   <option value="mx-large">Cherry MX Large</option>
                   <option value="mx-small">Cherry MX Tight Fit</option>
                   <option value="mx-spec">Cherry MX Spec</option>
-                  <option value="mx-spec-reverse">Cherry MX Spec Reverse</option>
                   <option value="alps-aek">Alps AEK</option>
                   <option value="alps-at101">Alps AT101</option>
                   <option value="none">None</option>

@@ -15,7 +15,6 @@ import { StabilizerMXBasic } from './cutouts/StabilizerMXBasic'
 import { StabilizerMXLarge } from './cutouts/StabilizerMXLarge'
 import { StabilizerMXSmall } from './cutouts/StabilizerMXSmall'
 import { StabilizerMXSpec } from './cutouts/StabilizerMXSpec'
-import { StabilizerMXSpecReverse } from './cutouts/StabilizerMXSpecReverse'
 import { StabilizerAlpsAEK } from './cutouts/StabilizerAlpsAEK'
 import { StabilizerAlpsAT101 } from './cutouts/StabilizerAlpsAT101'
 import { NullGenerator } from './cutouts/NullGenerator'
@@ -83,9 +82,6 @@ export function buildPlate(keysArray, generatorOptions) {
             break;
         case "mx-spec":
             stabilizerGenerator = new StabilizerMXSpec();
-            break;
-        case "mx-spec-reverse":
-            stabilizerGenerator = new StabilizerMXSpecReverse();
             break;
         case "alps-aek":
             stabilizerGenerator = new StabilizerAlpsAEK();
